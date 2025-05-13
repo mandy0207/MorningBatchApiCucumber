@@ -1,0 +1,6 @@
+enums\ApiResources.class
+pojo\Book.class
+utils\UniqueGenerator.class
+utils\ParseJson.class
+specBuilders\CreateSpecs.class
+utils\ScenarioContext.class
