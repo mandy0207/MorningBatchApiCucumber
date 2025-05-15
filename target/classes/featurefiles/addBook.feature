@@ -5,7 +5,7 @@ Feature: Test case regarding add Book
     Given library baseUrl is available
     When user sends request to add book with unique creds
     Then the status code should be "200"
-    And response should contain message "successfully added"
+    And response should contain message "Msg" "successfully added"
     
   @Smoke @Reg  
  Scenario Outline: Verify Book Addition using Data Parametrisation

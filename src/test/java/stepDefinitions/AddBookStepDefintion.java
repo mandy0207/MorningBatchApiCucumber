@@ -42,9 +42,9 @@ public class AddBookStepDefintion {
 	    
 	}
 
-	@Then("response should contain message {string}")
-	public void response_should_contain_message(String expecetedMsg) {
-		 scenarioContext.getResponse().then().log().all().assertThat().body("Msg", equalTo(expecetedMsg));
+	@Then("response should contain message {string} {string}")
+	public void response_should_contain_message(String msg , String expecetedMsg) {
+		 scenarioContext.getResponse().then().log().all().assertThat().body(msg, equalTo(expecetedMsg));
 	}
 	
 	@When("user sends post request to add book with {string} {string} {string} {string}")

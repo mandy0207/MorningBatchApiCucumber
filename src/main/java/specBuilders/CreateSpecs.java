@@ -14,7 +14,6 @@ public class CreateSpecs {
 	
 	public static  ResponseSpecification makeResponseSpec(int statusCode) {
 		ResponseSpecification res = new ResponseSpecBuilder().expectStatusCode(statusCode).expectContentType(ContentType.JSON)
-				.expectBody(null, null)
 				.build();
 		return res;
 	}
